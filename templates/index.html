@@ -30,6 +30,13 @@
             </div>
         </form>
     </div>
+    <div>
+        {% if predictions == 1 %}
+        <h2 style="color: red">Spam</h2>
+        {% elif predictions == -1 %}
+        <h2 style="color: green">Not Spam</h2>
+        {% endif %}
+    </div>
     <h2>{{predictions}}</h2>
 </body>
 
